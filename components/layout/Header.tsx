@@ -21,7 +21,7 @@ export const Header = () => {
             <div className="w-8 h-8 bg-accent-dark rounded-sm flex items-center justify-center flex-shrink-0">
               <span className="text-white font-bold text-sm">MB</span>
             </div>
-            <span className="text-foreground font-semibold text-sm md:text-lg truncate">
+            <span className="text-foreground font-semibold text-base md:text-lg truncate">
               Müteahhitlik Belgesi
             </span>
           </Link>

@@ -15,9 +15,40 @@ export const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-background">
       <div className="container mx-auto px-4 py-12 md:py-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          {/* Right Column - Hero Image (Mobile First - Top) */}
+          <div className="relative order-1 md:order-2">
+            <div className="relative aspect-[4/3] md:aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/muteahitlik-belgesi-hero.jpg"
+                alt="Müteahhitlik belgesi evrak dosyası hazırlama - profesyonel danışmanlık"
+                fill
+                priority={true}
+                fetchPriority="high"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+                style={{ 
+                  backgroundColor: '#F7F7F5',
+                  backgroundImage: 'linear-gradient(45deg, #E7E5E4 25%, transparent 25%), linear-gradient(-45deg, #E7E5E4 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #E7E5E4 75%), linear-gradient(-45deg, transparent 75%, #E7E5E4 75%)',
+                  backgroundSize: '20px 20px',
+                  backgroundPosition: '0 0, 0 10px, 10px -10px, -10px 0px'
+                }}
+              />
+              {/* Blueprint overlay effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent-dark/5 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/80 to-transparent p-4 md:p-6">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-accent-gold rounded-full"></div>
+                  <p className="text-xs md:text-sm text-foreground">
+                    Profesyonel evrak hazırlama süreci
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Left Column - Copy */}
-          <div className="space-y-6">
+          <div className="space-y-6 order-2 md:order-1">
             {/* Promise Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-gold/10 border border-accent-gold/20 rounded-sm">
               <Icon name="clock" size={16} className="text-accent-gold" />
@@ -111,37 +142,6 @@ export const Hero = () => {
                 <Icon name="phone" size={20} />
                 Hemen Ara
               </a>
-            </div>
-          </div>
-
-          {/* Right Column - Hero Image (Module 11) */}
-          <div className="relative">
-            <div className="relative aspect-square md:aspect-[4/3] rounded-lg overflow-hidden">
-              <Image
-                src="/muteahitlik-belgesi-hero.jpg"
-                alt="Müteahhitlik belgesi evrak dosyası hazırlama - profesyonel danışmanlık"
-                fill
-                priority={true}
-                fetchPriority="high"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
-                style={{ 
-                  backgroundColor: '#F7F7F5',
-                  backgroundImage: 'linear-gradient(45deg, #E7E5E4 25%, transparent 25%), linear-gradient(-45deg, #E7E5E4 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #E7E5E4 75%), linear-gradient(-45deg, transparent 75%, #E7E5E4 75%)',
-                  backgroundSize: '20px 20px',
-                  backgroundPosition: '0 0, 0 10px, 10px -10px, -10px 0px'
-                }}
-              />
-              {/* Blueprint overlay effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-dark/5 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/80 to-transparent p-6">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-accent-gold rounded-full"></div>
-                  <p className="text-sm text-foreground">
-                    Profesyonel evrak hazırlama süreci
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
