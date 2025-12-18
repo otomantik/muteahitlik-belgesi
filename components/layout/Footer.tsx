@@ -29,7 +29,7 @@ export const Footer = () => {
                 aria-label="WhatsApp ile iletişime geç"
                 className="flex items-center gap-3 text-foreground hover:text-accent-dark transition-colors"
               >
-                <Icon name="whatsapp" size={18} />
+                <Icon name="whatsapp" size={18} aria-hidden="true" />
                 <span>WhatsApp</span>
               </a>
               <div className="flex items-start gap-3">
