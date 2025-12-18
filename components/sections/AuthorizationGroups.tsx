@@ -43,6 +43,7 @@ export const AuthorizationGroups = () => {
                 href={CONTACT.whatsapp.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="WhatsApp ile yetki grubu hakkında bilgi al"
                 className="inline-flex items-center gap-3 bg-accent-dark text-white px-6 py-3 rounded-sm hover:bg-accent-dark/90 transition-colors font-medium"
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.gtag) {
@@ -53,7 +54,7 @@ export const AuthorizationGroups = () => {
                   }
                 }}
               >
-                <Icon name="whatsapp" size={20} />
+                <Icon name="whatsapp" size={20} aria-hidden="true" />
                 WhatsApp'a "BELGE" Yazın
               </a>
             </div>

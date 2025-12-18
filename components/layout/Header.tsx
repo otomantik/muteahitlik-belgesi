@@ -51,6 +51,7 @@ export const Header = () => {
           {/* Phone CTA Button */}
           <a
             href={`tel:${CONTACT.phone.primary}`}
+            aria-label={`${CONTACT.phone.formatted} numarasını ara`}
             className="flex items-center gap-2 px-4 py-2 bg-accent-dark text-white rounded-sm hover:bg-accent-dark/90 transition-colors text-sm font-medium"
             onClick={() => {
               // Analytics: click_call
@@ -62,7 +63,7 @@ export const Header = () => {
               }
             }}
           >
-            <Icon name="phone" size={16} />
+            <Icon name="phone" size={16} aria-hidden="true" />
             <span className="hidden sm:inline">Ara</span>
           </a>
         </div>

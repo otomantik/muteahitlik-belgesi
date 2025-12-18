@@ -16,15 +16,17 @@ export const Footer = () => {
             <div className="space-y-3">
               <a
                 href={`tel:${CONTACT.phone.primary}`}
+                aria-label={`${CONTACT.phone.formatted} numarasını ara`}
                 className="flex items-center gap-3 text-foreground hover:text-accent-dark transition-colors"
               >
-                <Icon name="phone" size={18} />
+                <Icon name="phone" size={18} aria-hidden="true" />
                 <span>{CONTACT.phone.formatted}</span>
               </a>
               <a
                 href={CONTACT.whatsapp.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="WhatsApp ile iletişime geç"
                 className="flex items-center gap-3 text-foreground hover:text-accent-dark transition-colors"
               >
                 <Icon name="whatsapp" size={18} />

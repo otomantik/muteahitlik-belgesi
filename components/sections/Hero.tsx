@@ -81,6 +81,7 @@ export const Hero = () => {
               href={CONTACT.whatsapp.link}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="WhatsApp ile hızlı kontrol için iletişime geç"
               className="inline-flex items-center justify-center gap-3 bg-accent-dark text-white px-6 py-4 rounded-sm hover:bg-accent-dark/90 transition-colors font-medium text-base sm:text-lg shadow-lg"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.gtag) {
@@ -99,13 +100,14 @@ export const Hero = () => {
                 }
               }}
             >
-              <Icon name="whatsapp" size={20} />
+              <Icon name="whatsapp" size={20} aria-hidden="true" />
               WhatsApp'tan Hızlı Kontrol
             </a>
 
             {/* Phone CTA */}
             <a
               href={`tel:${CONTACT.phone.primary}`}
+              aria-label={`${CONTACT.phone.formatted} numarasını ara`}
               className="inline-flex items-center justify-center gap-3 bg-card text-foreground border-2 border-border px-6 py-4 rounded-sm hover:bg-muted transition-colors font-medium text-base sm:text-lg"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.gtag) {
@@ -183,6 +185,7 @@ export const Hero = () => {
                 href={CONTACT.whatsapp.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="WhatsApp ile hızlı kontrol için iletişime geç"
                 className="inline-flex items-center justify-center gap-3 bg-accent-dark text-white px-6 py-4 rounded-sm hover:bg-accent-dark/90 transition-colors font-medium text-lg shadow-lg"
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.gtag) {
@@ -201,13 +204,14 @@ export const Hero = () => {
                   }
                 }}
               >
-                <Icon name="whatsapp" size={20} />
+                <Icon name="whatsapp" size={20} aria-hidden="true" />
                 WhatsApp'tan Hızlı Kontrol
               </a>
 
               {/* Phone CTA */}
               <a
                 href={`tel:${CONTACT.phone.primary}`}
+                aria-label={`${CONTACT.phone.formatted} numarasını ara`}
                 className="inline-flex items-center justify-center gap-3 bg-card text-foreground border-2 border-border px-6 py-4 rounded-sm hover:bg-muted transition-colors font-medium text-lg"
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.gtag) {
@@ -226,7 +230,7 @@ export const Hero = () => {
                   }
                 }}
               >
-                <Icon name="phone" size={20} />
+                <Icon name="phone" size={20} aria-hidden="true" />
                 Hemen Ara
               </a>
             </div>

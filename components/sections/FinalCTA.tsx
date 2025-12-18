@@ -28,6 +28,7 @@ export const FinalCTA = () => {
               href={CONTACT.whatsapp.link}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="WhatsApp ile hemen iletişime geç"
               className="inline-flex items-center justify-center gap-3 bg-accent-dark text-white px-8 py-4 rounded-sm hover:bg-accent-dark/90 transition-colors font-medium text-lg shadow-lg"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.gtag) {
@@ -46,12 +47,13 @@ export const FinalCTA = () => {
                 }
               }}
             >
-              <Icon name="whatsapp" size={24} />
+              <Icon name="whatsapp" size={24} aria-hidden="true" />
               WhatsApp'tan Hemen İletişim
             </a>
             
             <a
               href={`tel:${CONTACT.phone.primary}`}
+              aria-label={`${CONTACT.phone.formatted} numarasını ara - direkt görüşme`}
               className="inline-flex items-center justify-center gap-3 bg-card text-foreground border-2 border-border px-8 py-4 rounded-sm hover:bg-muted transition-colors font-medium text-lg"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.gtag) {

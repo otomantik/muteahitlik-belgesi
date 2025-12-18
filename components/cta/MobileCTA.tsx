@@ -20,7 +20,8 @@ export const MobileCTA = () => {
             href={CONTACT.whatsapp.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 bg-[#25D366] text-white rounded-sm flex-1 py-3 hover:bg-[#25D366]/90 transition-colors"
+            aria-label="WhatsApp ile iletişime geç"
+            className="flex items-center justify-center gap-2 bg-[#20BA5A] text-white rounded-sm flex-1 py-3 hover:bg-[#1EA04A] transition-colors font-medium shadow-sm"
             onClick={() => {
               // Analytics: click_whatsapp
               if (typeof window !== 'undefined' && window.gtag) {
@@ -39,14 +40,15 @@ export const MobileCTA = () => {
               }
             }}
           >
-            <Icon name="whatsapp" size={20} />
-            <span className="font-medium">WhatsApp</span>
+            <Icon name="whatsapp" size={20} aria-hidden="true" />
+            <span>WhatsApp</span>
           </a>
 
           {/* Phone CTA */}
           <a
             href={`tel:${CONTACT.phone.primary}`}
-            className="flex items-center justify-center gap-2 bg-accent-dark text-white rounded-sm flex-1 py-3 hover:bg-accent-dark/90 transition-colors"
+            aria-label={`${CONTACT.phone.formatted} numarasını ara`}
+            className="flex items-center justify-center gap-2 bg-accent-dark text-white rounded-sm flex-1 py-3 hover:bg-accent-dark/90 transition-colors font-medium shadow-sm"
             onClick={() => {
               // Analytics: click_call
               if (typeof window !== 'undefined' && window.gtag) {
@@ -65,8 +67,8 @@ export const MobileCTA = () => {
               }
             }}
           >
-            <Icon name="phone" size={20} />
-            <span className="font-medium">Ara</span>
+            <Icon name="phone" size={20} aria-hidden="true" />
+            <span>Ara</span>
           </a>
         </div>
       </div>
