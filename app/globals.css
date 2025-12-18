@@ -10,8 +10,8 @@
     --card: #FFFFFF;
     --border: #D6D3D1;
     --muted: #E7E5E4;
-    --muted-foreground: #78716C;
-    --accent-gold: #B58B2A;
+    --muted-foreground: #44403C; /* Daha koyu - WCAG AA kontrast için */
+    --accent-gold: #8B6914; /* Daha koyu altın - kontrast için */
     --accent-dark: #1E293B;
     
     /* Layout Variables for CLS Lock (Module 09) */

@@ -37,9 +37,9 @@ export const Hero = () => {
         <div className="relative z-10 container mx-auto px-4 py-12 w-full">
           <div className="space-y-6">
             {/* Promise Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-gold/10 border border-accent-gold/20 rounded-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-gold/15 border-2 border-accent-gold/40 rounded-sm">
               <Icon name="clock" size={16} className="text-accent-gold" />
-              <span className="text-accent-gold font-semibold text-sm">
+              <span className="text-accent-gold font-bold text-sm">
                 3 İş Günü - EVRAK HAZIRLAMA
               </span>
             </div>
@@ -50,29 +50,29 @@ export const Hero = () => {
               <span className="text-accent-dark">Evrak Dosyanız 3 İş Gününde Hazır</span>
             </h1>
 
-            {/* Subtext (Module 12 - Verbatim) */}
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            {/* Subtext (Module 12 - Verbatim) - Mobilde daha koyu */}
+            <p className="text-lg text-foreground/95 leading-relaxed font-semibold">
               Eksik evrak, yanlış yetki grubu, hatalı dosya. Bunlar süreci uzatır. 
               Biz başvuruya hazır evrak dosyasını 3 iş gününde teslim ederiz.
             </p>
 
             {/* Trust Badges */}
-            <div className="flex flex-wrap items-center gap-4 pt-2 text-sm text-muted-foreground">
+            <div className="flex flex-wrap items-center gap-4 pt-2 text-sm text-foreground/90">
               <div className="flex items-center gap-2">
                 <Icon name="checklist" size={16} className="text-accent-gold" />
-                <span>Ücretsiz Ön Değerlendirme</span>
+                <span className="font-semibold">Ücretsiz Ön Değerlendirme</span>
               </div>
               <div className="flex items-center gap-2">
                 <Icon name="shield" size={16} className="text-accent-gold" />
-                <span>KVKK Uyumlu</span>
+                <span className="font-semibold">KVKK Uyumlu</span>
               </div>
               <div className="flex items-center gap-2">
                 <Icon name="shield" size={16} className="text-accent-gold" />
-                <span>Gizlilik Taahhüdü</span>
+                <span className="font-semibold">Gizlilik Taahhüdü</span>
               </div>
               <div className="flex items-center gap-2">
                 <Icon name="clock" size={16} className="text-accent-gold" />
-                <span>3 İş Gününde Hazır</span>
+                <span className="font-semibold">3 İş Gününde Hazır</span>
               </div>
             </div>
 
@@ -140,9 +140,9 @@ export const Hero = () => {
           {/* Left Column - Copy */}
           <div className="space-y-6">
             {/* Promise Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-gold/10 border border-accent-gold/20 rounded-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-gold/15 border-2 border-accent-gold/40 rounded-sm">
               <Icon name="clock" size={16} className="text-accent-gold" />
-              <span className="text-accent-gold font-semibold text-sm">
+              <span className="text-accent-gold font-bold text-sm">
                 3 İş Günü - EVRAK HAZIRLAMA
               </span>
             </div>
@@ -154,28 +154,28 @@ export const Hero = () => {
             </h1>
 
             {/* Subtext (Module 12 - Verbatim) */}
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-foreground/85 leading-relaxed font-medium">
               Eksik evrak, yanlış yetki grubu, hatalı dosya. Bunlar süreci uzatır. 
               Biz başvuruya hazır evrak dosyasını 3 iş gününde teslim ederiz.
             </p>
 
             {/* Trust Badges */}
-            <div className="flex flex-wrap items-center gap-4 pt-2 text-sm text-muted-foreground">
+            <div className="flex flex-wrap items-center gap-4 pt-2 text-sm text-foreground/80">
               <div className="flex items-center gap-2">
                 <Icon name="checklist" size={16} className="text-accent-gold" />
-                <span>Ücretsiz Ön Değerlendirme</span>
+                <span className="font-medium">Ücretsiz Ön Değerlendirme</span>
               </div>
               <div className="flex items-center gap-2">
                 <Icon name="shield" size={16} className="text-accent-gold" />
-                <span>KVKK Uyumlu</span>
+                <span className="font-medium">KVKK Uyumlu</span>
               </div>
               <div className="flex items-center gap-2">
                 <Icon name="shield" size={16} className="text-accent-gold" />
-                <span>Gizlilik Taahhüdü</span>
+                <span className="font-medium">Gizlilik Taahhüdü</span>
               </div>
               <div className="flex items-center gap-2">
                 <Icon name="clock" size={16} className="text-accent-gold" />
-                <span>3 İş Gününde Hazır</span>
+                <span className="font-medium">3 İş Gününde Hazır</span>
               </div>
             </div>
 
