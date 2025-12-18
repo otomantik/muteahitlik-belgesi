@@ -20,7 +20,7 @@ export const AuthorizationGroups = () => {
           </h2>
           
           <div className="bg-card border border-border rounded-lg p-8 mb-8">
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-foreground/85 mb-6 font-medium">
               Müteahhitlik belgesi için A'dan H'ye tüm yetki grupları için danışmanlık sağlıyoruz. Müteahhitlik belgesi başvuru süreci genel tablolar üzerinden değil, her bir özel durum üzerinden değerlendirilir.
             </p>
             
@@ -59,7 +59,7 @@ export const AuthorizationGroups = () => {
             </div>
           </div>
 
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-foreground/80">
             Tablo göstermiyoruz çünkü her durum özeldir. Size özel değerlendirme için iletişime geçin.
           </p>
         </div>

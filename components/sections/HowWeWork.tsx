@@ -36,7 +36,7 @@ export const HowWeWork = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Müteahhitlik Belgesi Başvurusunda Nasıl <span className="text-accent-dark">Çalışıyoruz?</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
+          <p className="text-lg text-foreground/85 max-w-2xl mx-auto mb-6 font-medium">
             Müteahhitlik belgesi evrak hazırlama sürecinde 4 adımlık sistematik yaklaşımımız, başvuru sürecinin sorunsuz ilerlemesini sağlar.
           </p>
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-dark/10 border border-accent-dark/20 rounded-sm">
@@ -64,7 +64,7 @@ export const HowWeWork = () => {
               <h3 className="text-xl font-semibold text-foreground mb-3">
                 {step.title}
               </h3>
-              <p className="text-muted-foreground">{step.description}</p>
+              <p className="text-foreground/80">{step.description}</p>
             </div>
           ))}
         </div>

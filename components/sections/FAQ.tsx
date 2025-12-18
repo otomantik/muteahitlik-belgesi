@@ -48,7 +48,7 @@ export const FAQ = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Müteahhitlik Belgesi Hakkında Sık Sorulan <span className="text-accent-dark">Sorular</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/85 max-w-2xl mx-auto font-medium">
             Müteahhitlik belgesi başvuru süreci hakkında en çok sorulan sorular ve cevapları. Tüm sorularınızın yanıtlarını burada bulabilirsiniz.
           </p>
         </div>
@@ -74,7 +74,7 @@ export const FAQ = () => {
                 </button>
                 {openIndex === index && (
                   <div className="px-6 pb-6">
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-foreground/80 leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>

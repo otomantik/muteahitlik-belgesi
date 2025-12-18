@@ -18,7 +18,7 @@ export const FinalCTA = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Müteahhitlik Belgesi Başvurusunu Ertelemeye Gerek Yok
           </h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-foreground/85 mb-8 font-medium">
             Her geçen gün potansiyel ihaleleri ve projeleri kaçırıyorsunuz. 
             Müteahhitlik belgesi başvurunuz için ilk adım sadece bir iletişim kadar uzakta.
           </p>
@@ -75,7 +75,7 @@ export const FinalCTA = () => {
             </a>
           </div>
           
-          <p className="text-sm text-muted-foreground mt-8">
+          <p className="text-sm text-foreground/80 mt-8">
             Ücretsiz ön değerlendirme için iletişime geçin. Herhangi bir taahhüt içermez.
           </p>
         </div>

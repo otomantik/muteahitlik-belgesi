@@ -27,7 +27,7 @@ export const CoreFacts = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Müteahhitlik Belgesi Başvurusunda Neden <span className="text-accent-dark">Profesyonel Danışmanlık</span> Gerekiyor?
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/85 max-w-2xl mx-auto font-medium">
             Müteahhitlik belgesi sürecinde bu 3 temel gerçek, başvurunun neden uzadığını ve nasıl hızlandırılabileceğini açıklar.
           </p>
         </div>
@@ -44,7 +44,7 @@ export const CoreFacts = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">{fact.title}</h3>
               </div>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-foreground/80 leading-relaxed">
                 {fact.description}
               </p>
             </div>

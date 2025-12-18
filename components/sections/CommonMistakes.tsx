@@ -19,7 +19,7 @@ export const CommonMistakes = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Müteahhitlik Belgesi Başvurusunda En Sık Yapılan <span className="text-accent-dark">Hatalar</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-foreground/85 mb-8 font-medium">
               Müteahhitlik belgesi başvuru sürecinde bu hatalar süreci ortalama 2-3 ay uzatır. Profesyonel danışmanlık ile bu hatalardan kaçınılır.
             </p>
             
@@ -40,7 +40,7 @@ export const CommonMistakes = () => {
               </div>
               <h3 className="text-2xl font-semibold text-foreground">Ret Riski</h3>
             </div>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-foreground/80 mb-6">
               Müteahhitlik belgesi başvurusunda bu hataların her biri ret edilme riskini artırır. Her ret, en az 1 ay ek süre ve yeniden başvuru masrafı demektir.
             </p>
             <div className="bg-accent-dark/5 border-l-4 border-accent-dark p-4">
